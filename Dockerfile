@@ -1,5 +1,6 @@
 FROM openjdk:8-jre-alpine
 ARG version
+RUN export version=$version
 LABEL h2_version=$version
 LABEL maintainer="Fellipe F"
 WORKDIR /opt
